@@ -1,0 +1,1999 @@
+# translation of fr.po to
+# translation of es.po to spanish
+# This file is distributed under the same license as the tinyca package.
+# Copyright (C) 2004 Ramón Pons Vivanco <rpons@rinu.org>
+# Stephan Martin, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-06-28 23:11+0200\n"
+"PO-Revision-Date: 2006-02-18 23:11+0100\n"
+"Last-Translator: Stephan Martin\n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+#: ../lib/CA.pm:45
+msgid "error: can't open basedir: "
+msgstr "erreur: impossible d'ouvrir le répertoire: "
+
+#: ../lib/CA.pm:103
+msgid "  Opening CA: "
+msgstr "  Ouverture de la CA: "
+
+#: ../lib/CA.pm:110 ../lib/CA.pm:271
+msgid "Invalid CA selected"
+msgstr "CA selectionnée invalide"
+
+#: ../lib/CA.pm:155
+msgid "  Initializing OpenSSL"
+msgstr "  Initialisation d'OpenSSL"
+
+#: ../lib/CA.pm:161
+msgid "  Check for CA Version"
+msgstr "  Vérification de la version de la CA"
+
+#: ../lib/CA.pm:168 ../lib/CA.pm:196
+msgid "Can't open index file: "
+msgstr "Impossible d'ouvrir le fichier d'index: "
+
+#: ../lib/CA.pm:183
+msgid "  Convert CA"
+msgstr "  Convertir la CA"
+
+#: ../lib/CA.pm:202
+msgid "Can't open index backup: "
+msgstr "Impossible d'ouvrir la sauvegarde du fichier d'index: "
+
+#: ../lib/CA.pm:219
+msgid "This CA is converted for openssl 0.9.7x now."
+msgstr "Cette CA est maintenant convertie pour openssl 0.9.7x."
+
+#: ../lib/CA.pm:221
+msgid "You will find a backup copy of the index file at: "
+msgstr "Vous trouverez une copie de sauvegarde du fichier d'index ici: "
+
+#: ../lib/CA.pm:230
+msgid "  Read Configuration"
+msgstr "  Lecture de la  Configuration"
+
+#: ../lib/CA.pm:236
+msgid "  Create GUI"
+msgstr "  Création du GUI"
+
+#: ../lib/CA.pm:242
+msgid "  Create Toolbar"
+msgstr "  Création de la barre d'outils"
+
+#: ../lib/CA.pm:248
+msgid "  Actual CA: "
+msgstr "  CA actuelle: "
+
+#: ../lib/CA.pm:333
+#, c-format
+msgid "CA: %s deleted"
+msgstr "CA: %s détruite"
+
+#: ../lib/CA.pm:387
+msgid "Password of parent CA is needed for creating a Sub CA"
+msgstr ""
+"Le mot de passe de la CA parent est requis pour la création d'une CA "
+"intermédiaire"
+
+#: ../lib/CA.pm:396
+msgid "Name must be filled in and must"
+msgstr "Le nom doit être renseigné"
+
+#: ../lib/CA.pm:397
+msgid " not contain Spaces"
+msgstr " ne doit pas contenir d'espace"
+
+#: ../lib/CA.pm:409
+msgid "Please specify at least Common Name, "
+msgstr "S'il vous plait renseignez au moins le Common Name, "
+
+#: ../lib/CA.pm:410
+msgid "Country and Password"
+msgstr "Pays et mot de passe"
+
+#: ../lib/CA.pm:417 ../lib/REQ.pm:110
+msgid "Passwords don't match"
+msgstr "Les mots de passe ne sont pas identiques"
+
+#: ../lib/CA.pm:425 ../lib/REQ.pm:121
+msgid "Country must be exact 2 letter code"
+msgstr "Le Pays doit contenir un code sur 2 lettres"
+
+#: ../lib/CA.pm:429
+#, c-format
+msgid "CA: %s already exists"
+msgstr "La CA: %s existe déjà"
+
+#: ../lib/CA.pm:469
+msgid "Name for storage must be filled in and must not contain spaces"
+msgstr "Le nom doit être renseigné et ne doit pas contenir d'espace"
+
+#: ../lib/CA.pm:478
+msgid "You didn't give a password for the private CA key."
+msgstr ""
+"Vous n'avez pas donné de mot de passe pour protéger la clé privée de la CA."
+
+#: ../lib/CA.pm:480
+msgid "The import will fail, if the key is encrypted."
+msgstr "L'importation échouera si la clé est chiffrée."
+
+#: ../lib/CA.pm:489
+msgid "Please give a new password for the CA"
+msgstr "Veuillez donner un nouveau mot de passe pour la CA"
+
+#: ../lib/CA.pm:496
+msgid "New passwords don't match"
+msgstr "Les nouveaux mots de passe ne sont pas identiques"
+
+#: ../lib/CA.pm:504
+msgid "Please give a CA certificate to import"
+msgstr ""
+"Veuillez renseigner le nom du fichier contenant le certificat de la CA à "
+"importer"
+
+#: ../lib/CA.pm:509
+#, c-format
+msgid ""
+"Can't read CA certificate file:\n"
+"%s"
+msgstr ""
+"Impossible de lire le fichier de certificat de la CA:\n"
+"%s"
+
+#: ../lib/CA.pm:519
+msgid "Please give a CA keyfile to import"
+msgstr ""
+"Veuillez renseigner le nom du fichier contenant la clé privée de la CA à "
+"importer"
+
+#: ../lib/CA.pm:524
+#, c-format
+msgid ""
+"Can't read CA key file:\n"
+"%s"
+msgstr ""
+"Impossible de lire le fichier de clé privée de la CA:\n"
+"%s"
+
+#: ../lib/CA.pm:536
+msgid "Please give an Index file to import.\n"
+msgstr "Veuillez renseigner le nom du fichier d'index de la CA à importer.\n"
+
+#: ../lib/CA.pm:537
+msgid "If you don't have an Index file, i'll try to generate one.\n"
+msgstr ""
+"Si vous ne disposez pas d'un fichier d'index, je tenterai d'en générer un.\n"
+
+#: ../lib/CA.pm:538
+msgid "Attention: This will cause all Certificates to show up as valid.\n"
+msgstr ""
+"Attention: Après cette opération tous les certificats seront affichés comme "
+"étant valides.\n"
+
+#: ../lib/CA.pm:539
+msgid "Attention: Revoked Certificates will not be determined."
+msgstr "Attention: Les certificats révoqués ne seront plus affichés comme tel."
+
+#: ../lib/CA.pm:550
+#, c-format
+msgid ""
+"Can't read Index file:\n"
+"%s"
+msgstr ""
+"Impossible de lire le fichier d'index:\n"
+"%s"
+
+#: ../lib/CA.pm:563
+msgid "Please give a directory containing the certificates to import"
+msgstr ""
+"Veuillez donner le nom du répertoire contenant les certificats à importer"
+
+#: ../lib/CA.pm:568
+#, c-format
+msgid ""
+"Can't find certificate directory:\n"
+"%s"
+msgstr ""
+"Impossible de trouver le répertoire contenant les certificats:\n"
+"%s"
+
+#: ../lib/CA.pm:579
+#, c-format
+msgid "CA: %s already exists. Please choose another name"
+msgstr "la CA: %s existe déjà. Veuillez vhoisir un autre nom"
+
+#: ../lib/CA.pm:595
+msgid "Can't find X509v3 Basic Constraints in CA Certificate\n"
+msgstr ""
+"Impossible de trouver l'extension X509v3 Basic Constraints dans le "
+"certificat de la CA\n"
+
+#: ../lib/CA.pm:596
+msgid "Import canceled"
+msgstr "Importation annulée"
+
+#: ../lib/CA.pm:602
+msgid "The selected CA Certificate is no valid CA certificate\n"
+msgstr "Le certificat sélectionné n'est pas un certificat de CA valide\n"
+
+#: ../lib/CA.pm:603
+#, c-format
+msgid "X509v3 Basic Constraint is set to: %s"
+msgstr "L'extension X509v3 Basic Constraint vaut: %s"
+
+#: ../lib/CA.pm:613
+#, c-format
+msgid ""
+"Can't open Index file:\n"
+"%s"
+msgstr ""
+"Impossible d'ouvrir le fichier d'index:\n"
+"%s"
+
+#: ../lib/CA.pm:666 ../lib/CERT.pm:62
+#, c-format
+msgid "Can't open Certificate directory: %s"
+msgstr "Impossible d'ouvrir le répertoire de certificat: %s"
+
+#: ../lib/CA.pm:685 ../lib/CERT.pm:85
+#, c-format
+msgid "   Read Certificate: %s"
+msgstr "   Lecture du certificat: %s"
+
+#: ../lib/CA.pm:695
+#, c-format
+msgid "Can't read Certificate file: %s"
+msgstr "Impossible de lire le fichier de certificat: %s"
+
+#: ../lib/CA.pm:719
+#, c-format
+msgid "Can't write Certificate file: %s"
+msgstr "Impossible d'écrire le fichier de certificat: %s"
+
+#: ../lib/CA.pm:769 ../lib/CA.pm:928
+msgid "Can't open Index file: "
+msgstr "Impossible d'ouvrir le fichier d'index: "
+
+#: ../lib/CA.pm:781
+#, c-format
+msgid "Can't write CA Certificate file: %s"
+msgstr "Impossible d'écrire le fichier de certificat de la CA: %s"
+
+#: ../lib/CA.pm:801 ../lib/CA.pm:935
+msgid "Can't write Serial file: "
+msgstr "Impossible d'écrire le numéro de série: "
+
+#: ../lib/CA.pm:815
+#, c-format
+msgid "Can't write CA Key file: %s"
+msgstr "Impossible d'écrire le fichier de clé privée de la CA: %s"
+
+#: ../lib/CA.pm:832 ../lib/CA.pm:1156
+msgid "Generating CRL failed"
+msgstr "Echec de la generation de la CRL"
+
+#: ../lib/CA.pm:845
+#, c-format
+msgid "Succesfully imported %d certificates\n"
+msgstr "Certificats %d importés avec succès\n"
+
+#: ../lib/CA.pm:846
+msgid "Check the configuration of your imported CA."
+msgstr "vérification de la configuration de la CA importée."
+
+#: ../lib/CA.pm:863 ../lib/CA.pm:972
+msgid "No CA name given"
+msgstr "Aucun nom de CA n'a été donné"
+
+#: ../lib/CA.pm:872 ../lib/CA.pm:877 ../lib/CA.pm:882 ../lib/CA.pm:887
+#: ../lib/CA.pm:892 ../lib/CA.pm:897
+msgid "Can't create directory: "
+msgstr "Impossible de créer le répertoire: "
+
+#: ../lib/CA.pm:906
+#, c-format
+msgid "Can't open template file %s %s"
+msgstr "Impossible d'ouvrir le fichier modèle %s: %s"
+
+#: ../lib/CA.pm:911 ../lib/CA.pm:1208 ../lib/CA.pm:1275 ../lib/CERT.pm:638
+#: ../lib/KEY.pm:228 ../lib/REQ.pm:741
+#, c-format
+msgid "Can't open output file: %s: %s"
+msgstr "Impossible d'ouvrir le fichier de sortie %s: %s"
+
+#: ../lib/CA.pm:985 ../lib/KEY.pm:483 ../lib/REQ.pm:168
+msgid "Generating key failed"
+msgstr "Echec de la génération de la clé"
+
+#: ../lib/CA.pm:1019 ../lib/REQ.pm:194
+msgid "Generating Request failed"
+msgstr "Echec de la génération de la requête de certification"
+
+#: ../lib/CA.pm:1028 ../lib/CA.pm:1042 ../lib/CERT.pm:103
+msgid "Can't read Certificate"
+msgstr "Impossible de lire le certificat"
+
+#: ../lib/CA.pm:1033 ../lib/CA.pm:1047
+msgid "Can't write Certificate"
+msgstr "Impossible d'écrire le certificat"
+
+#: ../lib/CA.pm:1087
+msgid "Generating certificate failed"
+msgstr "Echec de la génération du certificat"
+
+#: ../lib/CA.pm:1107 ../lib/CA.pm:1132
+#, c-format
+msgid "Can't open ca certificate file %s %s"
+msgstr "Impossible d'ouvrir le fichier certificat de la CA %s %s"
+
+#: ../lib/CA.pm:1116
+#, c-format
+msgid "Can't create certificate chain file: %s: %s"
+msgstr ""
+"Impossible de créer le fichier contenant la chaîne de certification: %s: %s"
+
+#: ../lib/CA.pm:1165
+#, c-format
+msgid "CA: %s created"
+msgstr "CA: %s créée"
+
+#: ../lib/CA.pm:1200
+#, c-format
+msgid "Can't open certificate chain file: %s: %s"
+msgstr ""
+"Impossible d'ouvrir le fichier contenant la chaîne de certification: %s: %s"
+
+#: ../lib/CA.pm:1221
+#, c-format
+msgid "Certificate Chain succesfully exported to: %s"
+msgstr "Chaîne de certification exportée avec succès dans: %s "
+
+#: ../lib/CA.pm:1256 ../lib/CERT.pm:581 ../lib/GUI.pm:167 ../lib/KEY.pm:349
+#: ../lib/REQ.pm:72 ../lib/REQ.pm:390
+msgid "Can't read CA certificate"
+msgstr "Impossible de lire le certificat de la CA"
+
+#: ../lib/CA.pm:1266
+#, c-format
+msgid "Invalid Format for export_ca_cert(): %s"
+msgstr "Format invalide pour la fonction export_ca_cert(): %s"
+
+#: ../lib/CA.pm:1288
+#, c-format
+msgid "Certificate succesfully exported to: %s"
+msgstr "Certificat exporté avec succès dans: %s"
+
+#: ../lib/CA.pm:1321
+msgid "Please give the output file"
+msgstr "Veuillez renseigner le nom du fichier de sortie"
+
+#: ../lib/CA.pm:1329
+msgid "Please give the CA password to create the Revocation List"
+msgstr ""
+"Veuillez donner le mot de passe de la CA pour créer la Liste de Révocation"
+
+#: ../lib/CA.pm:1350
+msgid ""
+"Wrong CA password given\n"
+"Generating Revocation List failed"
+msgstr ""
+"Erreur dans le mot de passe de la CA\n"
+"Echec de la génération de la Liste de Révocation"
+
+#: ../lib/CA.pm:1354
+msgid ""
+"CA Key not found\n"
+"Generating Revocation List failed"
+msgstr ""
+"Impossible de trouver la clé privée de la CA\n"
+"Echec de la génération de la Liste de Révocation"
+
+#: ../lib/CA.pm:1358 ../lib/CA.pm:1364
+msgid "Generating Revocation List failed"
+msgstr "Echec de la génération de la Liste de Révocation"
+
+#: ../lib/CA.pm:1372
+#, c-format
+msgid "CRL successfully exported to: %s"
+msgstr "CRL exportée avec succès dans : %s"
+
+#: ../lib/CERT.pm:144 ../lib/CERT.pm:200 ../lib/CERT.pm:323 ../lib/CERT.pm:382
+#: ../lib/GUI.pm:852
+msgid "Please select a Certificate first"
+msgstr "Veuillez d'abord sélectionner un certificat"
+
+#: ../lib/CERT.pm:152 ../lib/CERT.pm:210 ../lib/CERT.pm:334 ../lib/CERT.pm:401
+#: ../lib/GUI.pm:2707 ../lib/GUI.pm:2718 ../lib/OpenSSL.pm:700
+#: ../lib/GUI/X509_browser.pm:277
+msgid "VALID"
+msgstr "VALIDE"
+
+#: ../lib/CERT.pm:154
+#, c-format
+msgid ""
+"Can't renew Certifikate with Status: %s\n"
+"Please revoke the Certificate first"
+msgstr ""
+"Impossible de renouveler le certificat dont le status est: %s\n"
+"Veuillez d'abord révoquer le certificat"
+
+#: ../lib/CERT.pm:169
+msgid ""
+"Key and Request are necessary for renewal of a Certificate\n"
+"Renewal is not possible!"
+msgstr ""
+"La clé privée et la requête de certification sont nécessaires pour le "
+"renouvellement du certificat\n"
+"Renouvellement de certificat impossible!"
+
+#: ../lib/CERT.pm:211
+#, c-format
+msgid "Can't revoke Certifikate with Status: %s"
+msgstr "Impossible de révoquer le certificat dont le status est: %s"
+
+#: ../lib/CERT.pm:257
+msgid ""
+"Wrong CA password given\n"
+"Revoking the Certificate failed"
+msgstr ""
+"Erreur dans le mot de passe de la CA\n"
+"Echec de la révocation du certificat"
+
+#: ../lib/CERT.pm:264
+msgid ""
+"CA Key not found\n"
+"Revoking the Certificate failed"
+msgstr ""
+"Impossible de trouver la clé privée de la CA\n"
+"Echec de la révocation du certificat"
+
+#: ../lib/CERT.pm:271
+msgid "Revoking the Certificate failed"
+msgstr "Echec de la révocation du certificat"
+
+#: ../lib/CERT.pm:291
+msgid "Generating a new Revocation List failed"
+msgstr "Echec de la génération de la nouvelle Liste de Révocation"
+
+#: ../lib/CERT.pm:336
+msgid ""
+"Can't delete VALID certificate!\n"
+"Please revoke the Certificate first."
+msgstr ""
+"Impossible de supprimer un certificat VALIDE!\n"
+"Veuillez d'abord révoquer le certificat."
+
+#: ../lib/CERT.pm:402
+msgid "Certificate seems not to be VALID"
+msgstr "Le certificat ne semble pas VALIDE"
+
+#: ../lib/CERT.pm:404
+msgid "Export is not possible"
+msgstr "Export impossible"
+
+#: ../lib/CERT.pm:431 ../lib/KEY.pm:173
+msgid "Please give at least the output file"
+msgstr "Veuillez rensigner au minimum le fichier de sortie"
+
+#: ../lib/CERT.pm:437
+msgid "Key is necessary for export as PKCS#12"
+msgstr "La clé privée est nécessaire pour exporter au format PKCS#12"
+
+#: ../lib/CERT.pm:439 ../lib/CERT.pm:455 ../lib/KEY.pm:258 ../lib/KEY.pm:309
+msgid "Export is not possible!"
+msgstr "Export impossible!"
+
+#: ../lib/CERT.pm:453
+#, c-format
+msgid "Key is necessary for export as %s"
+msgstr "La clé privée est nécessaire pour exporter au format %s"
+
+#: ../lib/CERT.pm:493 ../lib/KEY.pm:217
+#, c-format
+msgid "Can't open Certificate file: %s: %s"
+msgstr "Impossible d'ouvrir le fichier de certificat: %s: %s"
+
+#: ../lib/CERT.pm:526 ../lib/KEY.pm:289
+msgid "Generating PKCS#12 failed"
+msgstr "Echec de la génération du fichier PKCS#12"
+
+#: ../lib/CERT.pm:534 ../lib/CERT.pm:617 ../lib/KEY.pm:296 ../lib/KEY.pm:382
+#, c-format
+msgid "Certificate and Key successfully exported to %s"
+msgstr "Le certificat et la clé privée ont été correctement exportés dans %s"
+
+#: ../lib/CERT.pm:547 ../lib/CERT.pm:568 ../lib/REQ.pm:694
+#, c-format
+msgid "Can't create temporary file: %s: %s"
+msgstr "Impossible de créer le fichier temporaire: %s: %s"
+
+#: ../lib/CERT.pm:559
+#, c-format
+msgid "Can't read Key file: %s: %s"
+msgstr "Impossible d'ouvrir le fichier de clé privée: %s: %s"
+
+#: ../lib/CERT.pm:589 ../lib/KEY.pm:322 ../lib/KEY.pm:338 ../lib/KEY.pm:356
+msgid "Can't create temporary file"
+msgstr "Création du fichier temporaire impossible"
+
+#: ../lib/CERT.pm:610 ../lib/KEY.pm:376
+#, c-format
+msgid "Generating %s file failed"
+msgstr "Echec de la génération du fichier %s"
+
+#: ../lib/CERT.pm:629
+#, c-format
+msgid "Invalid Format for export_cert(): %s"
+msgstr "Format invalide pour la fonction export_cert(): %s"
+
+#: ../lib/CERT.pm:649
+#, c-format
+msgid "Certificate successfully exported to: %s"
+msgstr "Certificat exporté avec succès dans: %s"
+
+#: ../lib/GUI.pm:172 ../lib/GUI.pm:179
+msgid "CA"
+msgstr "CA"
+
+#: ../lib/GUI.pm:186
+msgid "CA Information"
+msgstr "Informations CA"
+
+#: ../lib/GUI.pm:205
+msgid "Certificates"
+msgstr "Certificats"
+
+#: ../lib/GUI.pm:245 ../lib/GUI.pm:2690 ../lib/GUI/WORDS.pm:58
+#: ../lib/GUI/X509_browser.pm:161 ../lib/GUI/X509_browser.pm:169
+#: ../lib/GUI/X509_browser.pm:178
+msgid "Common Name"
+msgstr "Nom Commun (Common Name)"
+
+#: ../lib/GUI.pm:246 ../lib/GUI.pm:1274 ../lib/GUI.pm:2315
+#: ../lib/GUI/WORDS.pm:59 ../lib/GUI/X509_browser.pm:162
+#: ../lib/GUI/X509_browser.pm:170 ../lib/GUI/X509_browser.pm:179
+msgid "eMail Address"
+msgstr "Adresse eMail"
+
+#: ../lib/GUI.pm:247 ../lib/GUI/WORDS.pm:61 ../lib/GUI/X509_browser.pm:163
+#: ../lib/GUI/X509_browser.pm:171 ../lib/GUI/X509_browser.pm:180
+msgid "Organizational Unit"
+msgstr "Unité Organisationnelle (OU)"
+
+#: ../lib/GUI.pm:248 ../lib/GUI/WORDS.pm:60 ../lib/GUI/X509_browser.pm:164
+#: ../lib/GUI/X509_browser.pm:172 ../lib/GUI/X509_browser.pm:181
+msgid "Organization"
+msgstr "Organisation"
+
+#: ../lib/GUI.pm:249 ../lib/GUI/WORDS.pm:62 ../lib/GUI/X509_browser.pm:165
+#: ../lib/GUI/X509_browser.pm:173 ../lib/GUI/X509_browser.pm:182
+msgid "Location"
+msgstr "Localisation"
+
+#: ../lib/GUI.pm:250 ../lib/GUI/WORDS.pm:63 ../lib/GUI/X509_browser.pm:166
+#: ../lib/GUI/X509_browser.pm:174 ../lib/GUI/X509_browser.pm:183
+msgid "State"
+msgstr "Province"
+
+#: ../lib/GUI.pm:251 ../lib/GUI/WORDS.pm:64 ../lib/GUI/X509_browser.pm:167
+#: ../lib/GUI/X509_browser.pm:175 ../lib/GUI/X509_browser.pm:184
+msgid "Country"
+msgstr "Pays"
+
+#: ../lib/GUI.pm:252 ../lib/GUI/WORDS.pm:70 ../lib/GUI/X509_browser.pm:185
+msgid "Type"
+msgstr "Type"
+
+#: ../lib/GUI.pm:266
+msgid "Keys"
+msgstr "Clés"
+
+#: ../lib/GUI.pm:309
+msgid "Requests"
+msgstr "Requêtes de certification"
+
+#: ../lib/GUI.pm:400
+#, c-format
+msgid "  Actual CA: %s"
+msgstr "  CA actuelle: %s"
+
+#: ../lib/GUI.pm:403
+#, c-format
+msgid "  Actual CA: %s - Certificates"
+msgstr "  CA actuelle: %s - Certificats"
+
+#: ../lib/GUI.pm:406
+#, c-format
+msgid "  Actual CA: %s - Keys"
+msgstr "  CA actuelle : %s - Clés"
+
+#: ../lib/GUI.pm:409
+#, c-format
+msgid "  Actual CA: %s - Requests"
+msgstr "  CA actuelles: %s - Requêtes de certification"
+
+#: ../lib/GUI.pm:458 ../lib/GUI.pm:1142
+msgid "Open CA"
+msgstr "Ouvrir la CA"
+
+#: ../lib/GUI.pm:464
+msgid "New CA"
+msgstr "Nouvelle CA"
+
+#: ../lib/GUI.pm:470 ../lib/GUI.pm:2383
+msgid "Import CA"
+msgstr "Importer la CA"
+
+#: ../lib/GUI.pm:476 ../lib/GUI.pm:1144
+msgid "Delete CA"
+msgstr "Supprimer la CA"
+
+#: ../lib/GUI.pm:486 ../lib/GUI.pm:525 ../lib/GUI.pm:593
+msgid "Details"
+msgstr "Details"
+
+#: ../lib/GUI.pm:492
+msgid "History"
+msgstr "Historique"
+
+#: ../lib/GUI.pm:498
+msgid "Sub CA"
+msgstr "CA intermédiaire"
+
+#: ../lib/GUI.pm:504
+msgid "Export CA"
+msgstr "Exporter la CA"
+
+#: ../lib/GUI.pm:510 ../lib/GUI.pm:1420
+msgid "Export CRL"
+msgstr "Exporter la CRL"
+
+#: ../lib/GUI.pm:517
+msgid "Export Chain"
+msgstr "Exporter la Chaîne"
+
+#: ../lib/GUI.pm:531 ../lib/GUI.pm:599
+msgid "View"
+msgstr "Afficher"
+
+#: ../lib/GUI.pm:541 ../lib/GUI.pm:605
+msgid "New"
+msgstr "Nouveau"
+
+#: ../lib/GUI.pm:548 ../lib/GUI.pm:579
+msgid "Export"
+msgstr "Exporter"
+
+#: ../lib/GUI.pm:554
+msgid "Revoke"
+msgstr "Revoquer"
+
+#: ../lib/GUI.pm:564
+msgid "Renew"
+msgstr "Renouveler"
+
+#: ../lib/GUI.pm:571 ../lib/GUI.pm:585 ../lib/GUI.pm:628
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../lib/GUI.pm:611
+msgid "Import"
+msgstr "Importer"
+
+#: ../lib/GUI.pm:621
+msgid "Sign"
+msgstr "Signer"
+
+#: ../lib/GUI.pm:647
+msgid "_CA"
+msgstr "_CA"
+
+#: ../lib/GUI.pm:650
+msgid "_Open CA"
+msgstr "_Ouvrir CA"
+
+#: ../lib/GUI.pm:655
+msgid "_New CA"
+msgstr "_Nouvelle CA"
+
+#: ../lib/GUI.pm:660
+msgid "_Delete CA"
+msgstr "_Supprimer CA"
+
+#: ../lib/GUI.pm:668
+msgid "_Exit"
+msgstr "_Quitter"
+
+#: ../lib/GUI.pm:675
+msgid "_Preferences"
+msgstr "_Preferences"
+
+#: ../lib/GUI.pm:678
+msgid "Experts Only!!"
+msgstr "Reservé aux experts!!"
+
+#: ../lib/GUI.pm:683
+msgid "OpenSSL _Configuration"
+msgstr "_Configuration OpenSSL"
+
+#: ../lib/GUI.pm:690 ../lib/GUI.pm:693
+msgid "_Help"
+msgstr "_Aide"
+
+#: ../lib/GUI.pm:698
+msgid "_About TinyCA"
+msgstr "_A propos de TinyCA"
+
+#: ../lib/GUI.pm:729
+msgid "Invalid mode for show_text():"
+msgstr "Mode invalide pour la fonction show_text():"
+
+#: ../lib/GUI.pm:734 ../lib/GUI.pm:849 ../lib/REQ.pm:237 ../lib/REQ.pm:368
+msgid "Please select a Request first"
+msgstr "Veuillez d'abord sélectionner une requête de certification"
+
+#: ../lib/GUI.pm:737
+msgid "Please select a certificate first"
+msgstr "Veuillez d'abord sélectionner un certificat"
+
+#: ../lib/GUI.pm:753 ../lib/GUI.pm:868 ../lib/GUI/X509_browser.pm:457
+#: ../lib/GUI/X509_browser.pm:516
+msgid "Can't read file"
+msgstr "Impossible de lire le fichier"
+
+#: ../lib/GUI.pm:755
+msgid "Request"
+msgstr "Requête de certification"
+
+#: ../lib/GUI.pm:755
+msgid "Certificate"
+msgstr "Certificat"
+
+#: ../lib/GUI.pm:816
+#, c-format
+msgid "Invalid mode for _show_popup_menu(): %s"
+msgstr "Mode erroné pour la fonction show_popup_menu(): %s"
+
+#: ../lib/GUI.pm:844
+msgid "Invalid mode for show_details():"
+msgstr "Mode erroné pour la fonction show_details()"
+
+#: ../lib/GUI.pm:870 ../lib/GUI.pm:970 ../lib/GUI.pm:3041
+msgid "Request Details"
+msgstr "Détails de la requête de certification"
+
+#: ../lib/GUI.pm:870 ../lib/GUI.pm:970 ../lib/GUI.pm:2898
+msgid "Certificate Details"
+msgstr "Détails du certificat"
+
+#: ../lib/GUI.pm:912 ../lib/GUI.pm:1680 ../lib/GUI.pm:3062
+msgid "Import Request"
+msgstr "Importer la requête de certification"
+
+#: ../lib/GUI.pm:914 ../lib/GUI.pm:2439
+msgid "Import CA Certificate"
+msgstr "Importer le Certificat de la CA"
+
+#: ../lib/GUI.pm:922
+msgid "Do you want to import the following Certificate Request?"
+msgstr "Voulez-vous importer la requête de certification suivante ?"
+
+#: ../lib/GUI.pm:924
+msgid "Do you want to import the following CA Certificate?"
+msgstr "Voulez-vous importer le certificat de CA suivant ?"
+
+#: ../lib/GUI.pm:978
+msgid "Subject DN"
+msgstr "Sujet DN"
+
+#: ../lib/GUI.pm:1002
+msgid "Issuer"
+msgstr "Emetteur"
+
+#: ../lib/GUI.pm:1028
+msgid "Validity"
+msgstr "Validité"
+
+#: ../lib/GUI.pm:1044
+msgid "Key/Request Details:"
+msgstr "Détails de Clé/Requête:"
+
+#: ../lib/GUI.pm:1044
+msgid "Key/Certificate Details:"
+msgstr "Détails de Clé/Certificat:"
+
+#: ../lib/GUI.pm:1060
+msgid "Fingerprints"
+msgstr "Empreinte Numérique"
+
+#: ../lib/GUI.pm:1076
+msgid "Requested X.509 Extensions"
+msgstr "Extensions X.509 demandées"
+
+#: ../lib/GUI.pm:1076
+msgid "X.509v3 Extensions"
+msgstr "Extensions X.509v3"
+
+#: ../lib/GUI.pm:1101
+msgid "Requested Netscape Extensions"
+msgstr "Extensions Netscape demandées"
+
+#: ../lib/GUI.pm:1101
+msgid "Netscape Extensions"
+msgstr "Extensions Netscape"
+
+#: ../lib/GUI.pm:1146
+msgid "Invalid action given: "
+msgstr "Action invalide : "
+
+#: ../lib/GUI.pm:1168 ../lib/GUI.pm:1214
+msgid "Invalid action for show_select_ca_dialog(): "
+msgstr "Action invalide pour la fonction show_select_ca_dialog(): "
+
+#: ../lib/GUI.pm:1190
+msgid "Available CAs"
+msgstr "CAs disponibles"
+
+#: ../lib/GUI.pm:1246
+msgid "Create Request"
+msgstr "Créer Requête"
+
+#: ../lib/GUI.pm:1247
+msgid "Create a new Certificate Request"
+msgstr "Créer une nouvelle requête de certificat"
+
+#: ../lib/GUI.pm:1261
+msgid "Common Name (eg, your Name,"
+msgstr "Nom commun (ie. votre Nom,"
+
+#: ../lib/GUI.pm:1266
+msgid "your eMail Address"
+msgstr "votre addresse eMail"
+
+#: ../lib/GUI.pm:1270
+msgid "or the Servers Name)"
+msgstr "ou le Nom du serveur)"
+
+#: ../lib/GUI.pm:1278
+msgid "Password (protect your private Key):"
+msgstr "Mot de passe (protrège votre Clé privée):"
+
+#: ../lib/GUI.pm:1282 ../lib/GUI.pm:2295
+msgid "Password (confirmation):"
+msgstr "Password (confirmation):"
+
+#: ../lib/GUI.pm:1286 ../lib/GUI.pm:2287
+msgid "Country Name (2 letter code):"
+msgstr "Pays (code sur 2 lettres):"
+
+#: ../lib/GUI.pm:1290 ../lib/GUI.pm:2299
+msgid "State or Province Name:"
+msgstr "Etat ou Nom de Province:"
+
+#: ../lib/GUI.pm:1294 ../lib/GUI.pm:2303
+msgid "Locality Name (eg. city):"
+msgstr "Localité (ie. ville):"
+
+#: ../lib/GUI.pm:1298 ../lib/GUI.pm:2307
+msgid "Organization Name (eg. company):"
+msgstr "Nom de l'Organisation (ie. entreprise):"
+
+#: ../lib/GUI.pm:1304 ../lib/GUI.pm:1309 ../lib/GUI.pm:2311
+msgid "Organizational Unit Name (eg. section):"
+msgstr "Unité Organisationelle (ie. département):"
+
+#: ../lib/GUI.pm:1314 ../lib/GUI.pm:2323 ../lib/GUI/WORDS.pm:67
+msgid "Keylength"
+msgstr "Longueur de la clé"
+
+#: ../lib/GUI.pm:1322 ../lib/GUI.pm:2353
+msgid "Digest"
+msgstr "Empreinte"
+
+#: ../lib/GUI.pm:1329
+msgid "Algorithm"
+msgstr "Algorithme"
+
+#: ../lib/GUI.pm:1360 ../lib/GUI.pm:2919
+msgid "Revoke Certificate"
+msgstr "Revoquer le Certificat"
+
+#: ../lib/GUI.pm:1369 ../lib/GUI.pm:1445 ../lib/GUI.pm:2094
+msgid "CA Password:"
+msgstr "Mot de passe de la CA:"
+
+#: ../lib/GUI.pm:1375
+msgid "Revocation Reason:"
+msgstr "Raison de la Revocation:"
+
+#: ../lib/GUI.pm:1420
+msgid "Export Revocation List to File"
+msgstr "Exporter la Liste de Revocation dans un fichier"
+
+#: ../lib/GUI.pm:1428 ../lib/GUI.pm:1516 ../lib/GUI.pm:1564 ../lib/GUI.pm:1688
+#: ../lib/GUI.pm:1756
+msgid "File:"
+msgstr "Fichier:"
+
+#: ../lib/GUI.pm:1439 ../lib/GUI.pm:1527 ../lib/GUI.pm:1575 ../lib/GUI.pm:1698
+#: ../lib/GUI.pm:1773 ../lib/GUI.pm:2436 ../lib/GUI.pm:2455 ../lib/GUI.pm:2474
+#: ../lib/GUI.pm:2493
+msgid "Browse..."
+msgstr "Parcourrir"
+
+#: ../lib/GUI.pm:1442 ../lib/GUI.pm:1555 ../lib/GUI.pm:1578
+msgid "Export CA Certificate"
+msgstr "Exporter le Certificat de la CA"
+
+#: ../lib/GUI.pm:1449 ../lib/GUI.pm:2100 ../lib/GUI.pm:2319
+msgid "Valid for (Days):"
+msgstr "Valide pendant (Jours):"
+
+#: ../lib/GUI.pm:1453 ../lib/GUI.pm:1582 ../lib/GUI.pm:1780
+msgid "Export Format:"
+msgstr "Format d'Export:"
+
+#: ../lib/GUI.pm:1459 ../lib/GUI.pm:1588
+msgid "PEM"
+msgstr "PEM"
+
+#: ../lib/GUI.pm:1468 ../lib/GUI.pm:1597
+msgid "DER"
+msgstr "DER"
+
+#: ../lib/GUI.pm:1477 ../lib/GUI.pm:1606
+msgid "TXT"
+msgstr "TXT"
+
+#: ../lib/GUI.pm:1508 ../lib/GUI.pm:1530
+msgid "Export CA Certificate Chain"
+msgstr "Exporter la Chaîne de certification de la CA"
+
+#: ../lib/GUI.pm:1509
+msgid "Export CA Certificate Chain to File"
+msgstr "Exporter la Chaîne de certification de la CA dans un fichier"
+
+#: ../lib/GUI.pm:1556
+msgid "Export CA Certificate to File"
+msgstr "Exporter le Certificat de la CA dans le ficher"
+
+#: ../lib/GUI.pm:1636 ../lib/GUI.pm:1637
+msgid "Export Key without Passphrase"
+msgstr "Exporter la clé sans Passphrase"
+
+#: ../lib/GUI.pm:1641
+msgid "I hope you know what you're doing?"
+msgstr "J'espère que vous savez ce que vous faites!"
+
+#: ../lib/GUI.pm:1645
+msgid "The Key Passphrase is needed for decryption of the Key"
+msgstr "La Passphrase de déchiffrement de la Clé privée est nécessaire"
+
+#: ../lib/GUI.pm:1654
+msgid "Password:"
+msgstr "Mot de passe:"
+
+#: ../lib/GUI.pm:1680 ../lib/GUI.pm:1701
+msgid "Import Request from File"
+msgstr "Importe la requête depuis un fichier"
+
+#: ../lib/GUI.pm:1722 ../lib/GUI.pm:1760 ../lib/GUI.pm:2912
+msgid "Export Certificate"
+msgstr "Export de Certificat"
+
+#: ../lib/GUI.pm:1724 ../lib/GUI.pm:1762 ../lib/GUI.pm:2869
+msgid "Export Key"
+msgstr "Export de la Clé"
+
+#: ../lib/GUI.pm:1727
+msgid "Invalid mode for show_export_dialog(): "
+msgstr "Mode erroné pour la fonction show_export_dialog():"
+
+#: ../lib/GUI.pm:1744
+msgid "Export Certificate to File"
+msgstr "Export de Certificat dans un Fichier"
+
+#: ../lib/GUI.pm:1746
+msgid "Export Key to File"
+msgstr "Export de Clé dans un Fichier"
+
+#: ../lib/GUI.pm:1784
+msgid "PEM (Certificate)"
+msgstr "PEM (Certificat)"
+
+#: ../lib/GUI.pm:1786
+msgid "PEM (Key)"
+msgstr "PEM (Clé)"
+
+#: ../lib/GUI.pm:1795
+msgid "DER (Certificate)"
+msgstr "DER (Certificat)"
+
+#: ../lib/GUI.pm:1797
+msgid "DER (Key without Passphrase)"
+msgstr "DER (Clé sans Mot de passe)"
+
+#: ../lib/GUI.pm:1805
+msgid "PKCS#12 (Certificate & Key)"
+msgstr "PKCS#12 (Certificat & Clé)"
+
+#: ../lib/GUI.pm:1812
+msgid "Zip (Certificate & Key)"
+msgstr "Zip (Certificat & Clé)"
+
+#: ../lib/GUI.pm:1822
+msgid "Tar (Certificate & Key)"
+msgstr "Tar (Certificat & Clé)"
+
+#: ../lib/GUI.pm:1834
+msgid "TXT (Certificate)"
+msgstr "TXT (Certificat)"
+
+#: ../lib/GUI.pm:1840
+msgid "Without Passphrase (PEM/PKCS#12)"
+msgstr "Sans Mot de passe (PEM/PKCS#12)"
+
+#: ../lib/GUI.pm:1846 ../lib/GUI.pm:1873 ../lib/GUI.pm:1892 ../lib/GUI.pm:2019
+#: ../lib/GUI.pm:2044 ../lib/GUI.pm:2197
+msgid "Yes"
+msgstr "Oui"
+
+#: ../lib/GUI.pm:1851 ../lib/GUI.pm:1878 ../lib/GUI.pm:1897 ../lib/GUI.pm:2025
+#: ../lib/GUI.pm:2050 ../lib/GUI.pm:2203
+msgid "No"
+msgstr "Non"
+
+#: ../lib/GUI.pm:1861
+msgid "Include Key (PEM)"
+msgstr "Inclure la Clé (PEM)"
+
+#: ../lib/GUI.pm:1866
+msgid "Include Certificate (PEM)"
+msgstr "Inclure le Certificat (PEM)"
+
+#: ../lib/GUI.pm:1886
+msgid "Include Fingerprint (PEM)"
+msgstr "Inclure l'empreinte digitale (PEM)"
+
+#: ../lib/GUI.pm:1994 ../lib/GUI.pm:1995
+msgid "Export to PKCS#12"
+msgstr "Exporter au format PKCS#12"
+
+#: ../lib/GUI.pm:2002
+msgid "Key Password:"
+msgstr "Mot de passe de la Clé:"
+
+#: ../lib/GUI.pm:2006
+msgid "Export Password:"
+msgstr "Mot de passe d'Export:"
+
+#: ../lib/GUI.pm:2009
+msgid "Friendly Name:"
+msgstr ""
+
+#: ../lib/GUI.pm:2013
+msgid "Without Passphrase"
+msgstr "Sans Mot de passe"
+
+#: ../lib/GUI.pm:2038
+msgid "Add CA Certificate to PKCS#12 structure"
+msgstr "Ajouter le Certificat de la Ca à la structure PKCS#12"
+
+#: ../lib/GUI.pm:2086 ../lib/GUI.pm:3069
+msgid "Sign Request"
+msgstr "Signer la Requête"
+
+#: ../lib/GUI.pm:2086
+msgid "Sign Request/Create Certificate"
+msgstr "Signer la Requête/Créer le Certificat"
+
+#: ../lib/GUI.pm:2111 ../lib/GUI.pm:2156
+msgid "Subject alternative name (IP Address):"
+msgstr "Nom Complémentaire (Subject alternative name) - Adresse IP:"
+
+#: ../lib/GUI.pm:2114 ../lib/GUI.pm:2159
+msgid "Subject alternative name (DNS Name):"
+msgstr "Nom Complémentaire (Subject alternative name) - Nom DNS:"
+
+#: ../lib/GUI.pm:2117 ../lib/GUI.pm:2165
+msgid "Subject alternative name (raw):"
+msgstr "Nom Complémentaire (Subject alternative name) - (raw):"
+
+#: ../lib/GUI.pm:2125 ../lib/GUI.pm:2173
+msgid "Extended Key Usage:"
+msgstr "Usage Etendu de la Clé (Extended Key Usage):"
+
+#: ../lib/GUI.pm:2132
+msgid "Netscape SSL Server Name:"
+msgstr "Nom de serveur Netscape SSL:"
+
+#: ../lib/GUI.pm:2139 ../lib/GUI.pm:2180
+msgid "Netscape Revocation URL:"
+msgstr "URL de Révocation Netscape:"
+
+#: ../lib/GUI.pm:2146 ../lib/GUI.pm:2187
+msgid "Netscape Renewal URL:"
+msgstr "URL de Renouvellement Netscape:"
+
+#: ../lib/GUI.pm:2162
+msgid "Subject alternative name (eMail Address):"
+msgstr "Nom Complémentaire (Subject alternative name) - Adresse email:"
+
+#: ../lib/GUI.pm:2209
+msgid "Add eMail Address to Subject DN:"
+msgstr "Ajouter l'adresse eMail au DN du Sujet:"
+
+#: ../lib/GUI.pm:2239 ../lib/GUI.pm:2243
+msgid "Create CA"
+msgstr "Creer une CA"
+
+#: ../lib/GUI.pm:2239
+msgid "Create a new Sub CA"
+msgstr "Creer une nouvelle CA intermédiaire"
+
+#: ../lib/GUI.pm:2243
+msgid "Create a new CA"
+msgstr "Creer une nouvelle CA"
+
+#: ../lib/GUI.pm:2256
+msgid "CA Password (for creating the new CA):"
+msgstr "Mot de passe de la CA (pour la création de la nouvelle CA):"
+
+#: ../lib/GUI.pm:2267 ../lib/GUI.pm:2404
+msgid "Name (for local storage):"
+msgstr "Nom (pour stockage local):"
+
+#: ../lib/GUI.pm:2274
+msgid "Data for CA Certificate"
+msgstr "Informations pour le Certificat de la CA"
+
+#: ../lib/GUI.pm:2283
+msgid "Common Name (for the CA):"
+msgstr "CN (Common Name) pour la CA:"
+
+#: ../lib/GUI.pm:2291
+msgid "Password (needed for signing):"
+msgstr "Mot de passe (requis pour la signature):"
+
+#: ../lib/GUI.pm:2383
+msgid "Import an existing CA into TinyCA"
+msgstr "Importer une CA exitante"
+
+#: ../lib/GUI.pm:2394
+msgid "Password of the private CA key (Needed for import):"
+msgstr "Mot de passe de la Clé privée (Requis pour l'importation):"
+
+#: ../lib/GUI.pm:2408
+msgid "New password for the CA:"
+msgstr "Nouveau Mot de passe pour la CA:"
+
+#: ../lib/GUI.pm:2412
+msgid "Confirm password:"
+msgstr "Confirmer le Mot de passe:"
+
+#: ../lib/GUI.pm:2417
+msgid "Files/Directories to import"
+msgstr "Fichiers/Répertoires à importer"
+
+#: ../lib/GUI.pm:2425
+msgid "CA Certificate (PEM/DER):"
+msgstr "Certificat de la CA (PEM/DER):"
+
+#: ../lib/GUI.pm:2444
+msgid "CA private key (PEM/DER):"
+msgstr "Clé privée de la CA (PEM/DER):"
+
+#: ../lib/GUI.pm:2458
+msgid "Import CA private Key"
+msgstr "Importer la Clé privée de la CA"
+
+#: ../lib/GUI.pm:2463
+msgid "OpenSSL Index File (index.txt):"
+msgstr "Fichier d'Index d'OpenSSL (index.txt):"
+
+#: ../lib/GUI.pm:2477
+msgid "Import Index File"
+msgstr "Importer le fichier d'index"
+
+#: ../lib/GUI.pm:2482
+msgid "Directory containing certificates (PEM/DER):"
+msgstr "Répertoire contenant les Certificats (PEM/DER):"
+
+#: ../lib/GUI.pm:2496
+msgid "Import Certificates from directory"
+msgstr "Importer les Certificats du répertoire"
+
+#: ../lib/GUI.pm:2510
+msgid "You are kidding, are you??"
+msgstr "Vous voulez rire, n'est-ce pas ?"
+
+#: ../lib/GUI.pm:2532
+msgid "Spanish: Ramon Pons Vivanco <rpons\\@rinu.org>"
+msgstr "Espagnol: Ramon Pons Vivanco <rpons\\@rinu.org>"
+
+#: ../lib/GUI.pm:2533
+msgid "Czech: Robert Wolf <gentoo\\@slave.umbr.cas.cz>"
+msgstr "Tcheck: Robert Wolf <gentoo\\@slave.umbr.cas.cz>"
+
+#: ../lib/GUI.pm:2534
+msgid "French: Thibault Le Meur <Thibault.Lemeur\\@supelec.fr>"
+msgstr "French: Thibault Le Meur <Thibault.Lemeur\\@supelec.fr>"
+
+#: ../lib/GUI.pm:2550
+msgid "Do you really want to delete the selected Request?"
+msgstr "Voulez-vous vraiment détruire la Requête sélectionnée?"
+
+#: ../lib/GUI.pm:2552
+msgid "Do you really want to delete the selected Key?"
+msgstr "Voulez-vous vraiment détruire la Clé sélectionnée?"
+
+#: ../lib/GUI.pm:2554
+msgid "Do you really want to delete the selected Certificate?"
+msgstr "Voulez-vous vraiment détruire le Certificat sélectionné?"
+
+#: ../lib/GUI.pm:2604
+msgid "Overwrite Request/Key"
+msgstr "Ecraser la Requête/Clé"
+
+#: ../lib/GUI.pm:2610
+msgid "The Key or the Request is already existing!"
+msgstr "La Clé ou la Requête existe déjà!"
+
+#: ../lib/GUI.pm:2615
+msgid "You won't be able to sign this Request"
+msgstr "Vous ne pourrez pas signer cette Requête"
+
+#: ../lib/GUI.pm:2620
+msgid "if the corresponding certificate is still valid"
+msgstr "Si le Certificat correspondant est tjours valide"
+
+#: ../lib/GUI.pm:2637
+msgid "The Certificate will be longer valid than your CA!"
+msgstr ""
+"La date de validité du Certificat dépasse la date de validité de la CA!"
+
+#: ../lib/GUI.pm:2639
+msgid "This may cause problems with some software!!"
+msgstr "Cela peut causer des problèmes avec certains logiciels!!"
+
+#: ../lib/GUI.pm:2654
+msgid "Expirationdate Warning"
+msgstr "Avertissement de date d'Expiration"
+
+#: ../lib/GUI.pm:2689 ../lib/GUI/WORDS.pm:71
+msgid "Serial"
+msgstr "Numéro de Série"
+
+#: ../lib/GUI.pm:2691 ../lib/GUI/WORDS.pm:72 ../lib/GUI/X509_browser.pm:176
+msgid "Status"
+msgstr "Etat"
+
+#: ../lib/GUI.pm:2692 ../lib/GUI/WORDS.pm:66
+msgid "Expiration Date"
+msgstr "Date d'Expiration"
+
+#: ../lib/GUI.pm:2693
+msgid "Revocation Date"
+msgstr "Date de Révocation"
+
+#: ../lib/GUI.pm:2694
+msgid "Revocation Reason"
+msgstr "Cause de la Révocation"
+
+#: ../lib/GUI.pm:2720 ../lib/OpenSSL.pm:703
+msgid "EXPIRED"
+msgstr "EXPIRE"
+
+#: ../lib/GUI.pm:2722 ../lib/OpenSSL.pm:716
+msgid "REVOKED"
+msgstr "REVOQUE"
+
+#: ../lib/GUI.pm:2742
+msgid "CA History"
+msgstr "Historique de la CA"
+
+#: ../lib/GUI.pm:2776
+msgid "Overwrite Certificate"
+msgstr "Ecraser le Certificat"
+
+#: ../lib/GUI.pm:2782
+msgid "There seems to be a certificate with the same Subject already."
+msgstr "Il semble qu'un Certificat avec le même Sujet existe déjà."
+
+#: ../lib/GUI.pm:2787
+msgid ""
+"Creating a new one (overwrite) will fail if it's not revoked or expired!"
+msgstr ""
+"La création d'un nouveau Certificat (Ecrasement) échouera s'il l'ancien "
+"n'est pas révoqué ou n'a pas expiré!"
+
+#: ../lib/GUI.pm:2793
+msgid "Really try to overwrite the Certificate?"
+msgstr "Voulez-vous vraiment essayer d'écraser le Certificat?"
+
+#: ../lib/GUI.pm:2826
+msgid "Convert CA"
+msgstr "Convertir la CA"
+
+#: ../lib/GUI.pm:2834
+msgid ""
+"This CA seems to be created with openssl 0.9.6x. And it seems like you have "
+"switched to openssl 0.9.7x."
+msgstr ""
+"Il semble que ce CA a été créé avec OpenSSL 0.9.6x. Et il semble que vous "
+"avez mis à jour OpenSSL en version 0.9.7x."
+
+#: ../lib/GUI.pm:2842
+msgid ""
+"You won't be able to revoke the existing certificates without converting the "
+"index file of this CA to the new format."
+msgstr ""
+"Vous ne pourrez pas révoquer les certificats existant sans convertir le "
+"fichier d'index de cette CA dans le nouveau format."
+
+#: ../lib/GUI.pm:2850
+msgid ""
+"Attention: it will not be easy to switch back, this has to be done manually"
+msgstr ""
+"Attention: il ne sera pas facil de revenir en arrière, cela doit être fait "
+"manuellement"
+
+#: ../lib/GUI.pm:2876
+msgid "Delete Key"
+msgstr "Supprimer la Clé"
+
+#: ../lib/GUI.pm:2905
+msgid "View Certificate"
+msgstr "Afficher le Certificat"
+
+#: ../lib/GUI.pm:2926
+msgid "Renew Certificate"
+msgstr "Renouveler le Certificat"
+
+#: ../lib/GUI.pm:2934
+msgid "Delete Certificate"
+msgstr "Supprimer le Certificat"
+
+#: ../lib/GUI.pm:2957
+msgid "Create Key and Certificate (Server)"
+msgstr "Créer une Clé et un Certificat (Serveur)"
+
+#: ../lib/GUI.pm:2963
+msgid "Create Key and Certificate (Client)"
+msgstr "Créer une Clé et un Certificat (Client)"
+
+#: ../lib/GUI.pm:2984
+msgid "Renew Certificate (Server)"
+msgstr "Renouveler le Certificat (Serveur)"
+
+#: ../lib/GUI.pm:2991
+msgid "Renew Certificate (Client)"
+msgstr "Renouveler le Certificat (Client)"
+
+#: ../lib/GUI.pm:3013
+msgid "Sign Request (Server)"
+msgstr "Signer la Requête (Serveur)"
+
+#: ../lib/GUI.pm:3020
+msgid "Sign Request (Client)"
+msgstr "Signer la Requête (Client)"
+
+#: ../lib/GUI.pm:3048
+msgid "View Request"
+msgstr "Afficher la Requête"
+
+#: ../lib/GUI.pm:3055
+msgid "New Request"
+msgstr "Nouvelle Requête"
+
+#: ../lib/GUI.pm:3077
+msgid "Delete Request"
+msgstr "Supprimer la Requête"
+
+#: ../lib/HELPERS.pm:208
+#, c-format
+msgid "Can't write exportdir: %s, %s"
+msgstr "Impossible d'écrire dans le réperoire d'export: %s: %s"
+
+#: ../lib/KEY.pm:46 ../lib/KEY.pm:138
+msgid "Please select a Key first"
+msgstr "Veuillez d'abord sélectionner une Clé"
+
+#: ../lib/KEY.pm:55
+msgid "Key file not found:"
+msgstr "Fichier contenant la Clé introuvable:"
+
+#: ../lib/KEY.pm:102
+msgid "Can't open key directory"
+msgstr "Impossible d'ouvrir le répertoire des Clés"
+
+#: ../lib/KEY.pm:195
+msgid ""
+"Wrong password given\n"
+"Decrypting of the Key failed\n"
+"Export is not possible"
+msgstr ""
+"Mauvais Mot de passe renseigné\n"
+"Echec de déchiffrement de la Clé\n"
+"Export impossible"
+
+#: ../lib/KEY.pm:200
+msgid "Converting failed, Export not possible"
+msgstr "Echec de la conversion, Export impossible"
+
+#: ../lib/KEY.pm:207 ../lib/KEY.pm:411
+#, c-format
+msgid "Can't open Key file: %s: %s"
+msgstr "Impossible d'ouvrir le fichier de Clé: %s: %s"
+
+#: ../lib/KEY.pm:240
+#, c-format
+msgid "Key succesfully exported to %s"
+msgstr "Clée exportée avec succès: %s"
+
+#: ../lib/KEY.pm:256
+msgid "Certificate is necessary for export as PKCS#12"
+msgstr "Un Certificat est requis pour l'export au format PKCS#12"
+
+#: ../lib/KEY.pm:306
+#, c-format
+msgid "Certificate is necessary for export as %s file"
+msgstr "Un Certificat est requis pour l'export au format %s"
+
+#: ../lib/KEY.pm:331
+msgid "Can't read Key file"
+msgstr "Lecture impossible du fichier de Clé"
+
+#: ../lib/KEY.pm:393
+#, c-format
+msgid "Invalid format for export requested: %s"
+msgstr "Format invalide pour exporter une Requête: %s"
+
+#: ../lib/KEY.pm:399
+msgid "Something Failed ??"
+msgstr "Une erreur c'est produite??"
+
+#: ../lib/KEY.pm:449
+#, c-format
+msgid ""
+"Can't open Key file:\n"
+"%s"
+msgstr ""
+"Lecture impossible du fichier de Clé:\n"
+"%s"
+
+#: ../lib/KEY.pm:486
+msgid "The password for your old CA Key is wrong"
+msgstr "Le mot de passe de votre ancienne CA est incorrect"
+
+#: ../lib/OpenSSL.pm:74
+msgid "Creating DSA key in progress..."
+msgstr "Création de la Clé DSA en cours..."
+
+#: ../lib/OpenSSL.pm:108
+msgid "Creating RSA key in progress..."
+msgstr "Création de la Clé RSA en cours..."
+
+#: ../lib/OpenSSL.pm:454
+#, c-format
+msgid "Can't open CRL '%s': %s"
+msgstr "Impossible d'ouvrir la CRL '%s': %s"
+
+#: ../lib/OpenSSL.pm:469 ../lib/OpenSSL.pm:482
+msgid "Error converting CLR"
+msgstr "Erreur de conversion de la CLR"
+
+#: ../lib/OpenSSL.pm:580 ../lib/OpenSSL.pm:593
+msgid "Error converting Certificate"
+msgstr "Erreur de conversion du Certificat"
+
+#: ../lib/OpenSSL.pm:653 ../lib/OpenSSL.pm:670
+msgid "Error reading fingerprint from Certificate"
+msgstr "Erreur de lecture de l'empreinte digitale du Certificat"
+
+#: ../lib/OpenSSL.pm:688
+msgid "Error reading subject from Certificate"
+msgstr "Erreur de lecture du Sujet du Certificat"
+
+#: ../lib/OpenSSL.pm:698
+msgid "Can't read CRL"
+msgstr "Impossible de lire la CRL"
+
+#: ../lib/OpenSSL.pm:721
+msgid "UNDEFINED"
+msgstr "NON DEFINI"
+
+#: ../lib/OpenSSL.pm:748
+#, c-format
+msgid "Can't open Request file %s: %s"
+msgstr "Impossible d'ouvrir le fichier de Requête %s: %s"
+
+#: ../lib/OpenSSL.pm:765 ../lib/OpenSSL.pm:779 ../lib/REQ.pm:686
+msgid "Error converting Request"
+msgstr "Erreur de conversion de la Requête"
+
+#: ../lib/OpenSSL.pm:861
+#, c-format
+msgid "Can't open file %s: %s"
+msgstr "Impossible d'ouvrir le fichier %s: %s"
+
+#: ../lib/OpenSSL.pm:979 ../lib/OpenSSL.pm:1011
+#, c-format
+msgid "Can't read index %s: %s"
+msgstr "Impossible de lire l'Index %s: %s"
+
+#: ../lib/OpenSSL.pm:1021
+#, c-format
+msgid "Can't write index %s: %s"
+msgstr "Impossible d'écrire l'Index %s: %s"
+
+#: ../lib/REQ.pm:59
+#, c-format
+msgid "Strange value for 'opts': %s"
+msgstr "Valeur étrange pour 'opts': %s"
+
+#: ../lib/REQ.pm:102
+msgid "Please specify at least Common Name "
+msgstr "Veuillez au minimum spécifier le CN "
+
+#: ../lib/REQ.pm:103
+msgid "and Password"
+msgstr "et le Mot de passe"
+
+#: ../lib/REQ.pm:247 ../lib/REQ.pm:377
+msgid "Request file not found"
+msgstr "Fichier de Requête introuvable"
+
+#: ../lib/REQ.pm:300
+msgid "Can't open Request directory"
+msgstr "Impossible d'ouvrir le répertoire de Requêtes"
+
+#: ../lib/REQ.pm:321
+#, c-format
+msgid "   Read Request: %s"
+msgstr "   Lecture de la Requête: %s"
+
+#: ../lib/REQ.pm:415
+msgid "Can't read Request file"
+msgstr "Impossible de lire le fichier de Requête"
+
+#: ../lib/REQ.pm:459
+msgid "Can't read serial"
+msgstr "Impossible de lire le Numéro de Série"
+
+#: ../lib/REQ.pm:532
+msgid ""
+"Wrong CA password given\n"
+"Signing of the Request failed"
+msgstr ""
+"Mauvais Mot de passe de CA rensigné\n"
+"Echec de la signature de la Requête"
+
+#: ../lib/REQ.pm:538
+msgid ""
+"CA Key not found\n"
+"Signing of the Request failed"
+msgstr ""
+"Clé de la CA introuvable\n"
+"Echec de la signature de la Requête"
+
+#: ../lib/REQ.pm:544
+msgid ""
+"Certificate already existing\n"
+"Signing of the Request failed"
+msgstr ""
+"Le Certificat existe déjà\n"
+"Echec de la signature de la Requête"
+
+#: ../lib/REQ.pm:550
+msgid ""
+"Invalid IP Address given\n"
+"Signing of the Request failed"
+msgstr ""
+"Adresse IP fournie invalide\n"
+"Echec de la signature de la Requête"
+
+#: ../lib/REQ.pm:557 ../lib/REQ.pm:575
+msgid "Signing of the Request failed"
+msgstr "Echec de la signature de la Requête"
+
+#: ../lib/REQ.pm:582
+msgid "Can't read Certificate file"
+msgstr "Impossible de lire le fichier du Certificat"
+
+#: ../lib/REQ.pm:588 ../lib/REQ.pm:598
+msgid "Can't write Certificate file"
+msgstr "Impossible d'écrire le fichier de Certificat"
+
+#: ../lib/REQ.pm:610
+msgid ""
+"Request signed succesfully.\n"
+"Certificate created"
+msgstr ""
+"Requête signée avec succès.\n"
+"Certifica créé."
+
+#: ../lib/REQ.pm:651
+msgid "Please select a Request file first"
+msgstr "Veuillez d'abord sélectionner une fichier de Requête"
+
+#: ../lib/REQ.pm:657
+msgid "Can't find Request file: "
+msgstr "Impossible de rtouver le fichier de Requête: "
+
+#: ../lib/REQ.pm:663
+msgid "Can't read Request file:"
+msgstr "Impossible de lire le fichier de Requête:"
+
+#: ../lib/REQ.pm:709
+msgid "Parsing Request failed"
+msgstr "Echec de l'analyse du fichier de Requête"
+
+#: ../lib/TCONFIG.pm:43
+msgid "Please select a CA first"
+msgstr "Veuillez d'abord sélectionner une CA"
+
+#: ../lib/TCONFIG.pm:50
+msgid "Can't open configuration"
+msgstr "Impossible d'ouvrir le fichier de configuration"
+
+#: ../lib/TCONFIG.pm:285 ../lib/TCONFIG.pm:300 ../lib/GUI/TCONFIG.pm:48
+#: ../lib/GUI/TCONFIG.pm:1303
+msgid "Can't get CA name"
+msgstr "Impossible d'obtenir le nom de la CA"
+
+#: ../lib/TCONFIG.pm:328
+msgid "Can't open configfile"
+msgstr "impossible d'ouvrir le fichier de configuration"
+
+#: ../lib/GUI/HELPERS.pm:55 ../lib/GUI/HELPERS.pm:95 ../lib/GUI/HELPERS.pm:136
+msgid "Command Details"
+msgstr "Détails "
+
+#: ../lib/GUI/HELPERS.pm:306
+msgid "Request Files (*.pem, *.der, *.req)"
+msgstr "Fichiers de Requêtes (*.pem, *.der, *.req)"
+
+#: ../lib/GUI/HELPERS.pm:313
+msgid "All Files (*.*)"
+msgstr "Tout fichier (*.*)"
+
+#: ../lib/GUI/TCONFIG.pm:75
+msgid ""
+"All Settings are written unchanged to openssl.conf.\n"
+"So please study the documentation of OpenSSL if you don't know exactly what "
+"to do.\n"
+"If you are still unsure - keep the defaults and everything is expected to "
+"work fine."
+msgstr ""
+"Toutes les paramètres sont écrits tels quels dans openssl.conf.\n"
+"Veuillez donc consulter la documentation d'OpenSSL si vous n'ête pas sûr de "
+"ce que vous faites.\n"
+"En cas de doute, conservez les paramètres par défaut et tout devrait bien "
+"fonctionner."
+
+#: ../lib/GUI/TCONFIG.pm:109 ../lib/GUI/TCONFIG.pm:117
+msgid "OpenSSL Configuration"
+msgstr "Configuration d'OpenSSL"
+
+#: ../lib/GUI/TCONFIG.pm:130
+msgid "Only change these options, if you really know, what you are doing!!"
+msgstr "Ne changez ces options que si vous savez vraiment ce que vous faites!!"
+
+#: ../lib/GUI/TCONFIG.pm:138
+msgid "You should be aware, that some options may break some crappy software!!"
+msgstr ""
+"Attention, certaines de ces options peuvent être incompatibles avec d'autres "
+"logiciels!!"
+
+#: ../lib/GUI/TCONFIG.pm:147 ../lib/GUI/TCONFIG.pm:1349
+msgid "If you are unsure: leave the defaults untouched"
+msgstr "En cas de doute: conservez les paramètres par défaut"
+
+#: ../lib/GUI/TCONFIG.pm:183
+msgid "These Settings are passed to OpenSSL for creating Server Certificates"
+msgstr ""
+"Ces options sont passées à OpenSSL pour la création des Certificats de "
+"Serveurs"
+
+#: ../lib/GUI/TCONFIG.pm:188 ../lib/GUI/TCONFIG.pm:613
+#: ../lib/GUI/TCONFIG.pm:1020 ../lib/GUI/TCONFIG.pm:1240
+#: ../lib/GUI/TCONFIG.pm:1341
+msgid "Multiple Values can be separated by \",\""
+msgstr "Les valeurs multiples peuvent être séparées par des \",\""
+
+#: ../lib/GUI/TCONFIG.pm:208 ../lib/GUI/TCONFIG.pm:210
+msgid "Server Certificate Settings"
+msgstr "Paramètres pour les Certificats Serveur"
+
+#: ../lib/GUI/TCONFIG.pm:216 ../lib/GUI/TCONFIG.pm:639
+#: ../lib/GUI/TCONFIG.pm:1048 ../lib/GUI/TCONFIG.pm:1463
+msgid "Subject alternative name (subjectAltName):"
+msgstr "Nom complémentaire (subjectAltName):"
+
+#: ../lib/GUI/TCONFIG.pm:313 ../lib/GUI/TCONFIG.pm:745
+#: ../lib/GUI/TCONFIG.pm:1108 ../lib/GUI/TCONFIG.pm:1359
+msgid "Key Usage (keyUsage):"
+msgstr "Utilisation de la Clé (keyUsage):"
+
+#: ../lib/GUI/TCONFIG.pm:392 ../lib/GUI/TCONFIG.pm:820
+msgid "Extended Key Usage (extendedKeyUsage):"
+msgstr "Extension d'Utilisation de la Clé (extendedKeyUsage):"
+
+#: ../lib/GUI/TCONFIG.pm:468 ../lib/GUI/TCONFIG.pm:895
+#: ../lib/GUI/TCONFIG.pm:1077 ../lib/GUI/TCONFIG.pm:1432
+msgid "Netscape Certificate Type (nsCertType):"
+msgstr "Type de Certificat Netscape (nsCertType):"
+
+#: ../lib/GUI/TCONFIG.pm:497
+msgid "Netscape SSL Server Name (nsSslServerName):"
+msgstr "Nom de Serveur SSL Netscape (nsSslServerName):"
+
+#: ../lib/GUI/TCONFIG.pm:522 ../lib/GUI/TCONFIG.pm:925
+#: ../lib/GUI/TCONFIG.pm:1183
+msgid "Netscape Revocation URL (nsRevocationUrl):"
+msgstr "URL de Revocation Netscape (nsRevocationUrl):"
+
+#: ../lib/GUI/TCONFIG.pm:547 ../lib/GUI/TCONFIG.pm:949
+msgid "Netscape Renewal URL (nsRenewalUrl):"
+msgstr "URL de Renouvellement Netscape (nsRenewalUrl):"
+
+#: ../lib/GUI/TCONFIG.pm:608
+msgid "These Settings are passed to OpenSSL for creating Client Certificates"
+msgstr ""
+"Ces options sont passées à OpenSSL pour la création des Certificats de "
+"Clients"
+
+#: ../lib/GUI/TCONFIG.pm:633
+msgid "Client Certificate Settings"
+msgstr "Paramètres de Certificats Client"
+
+#: ../lib/GUI/TCONFIG.pm:1015
+msgid "These Settings are passed to OpenSSL for creating CA Certificates"
+msgstr ""
+"Ces options sont passées à OpenSSL pour la création des Certificats de CA"
+
+#: ../lib/GUI/TCONFIG.pm:1040 ../lib/GUI/TCONFIG.pm:1042
+msgid "CA Certificate Settings"
+msgstr "Paramètres de Certificats de CA"
+
+#: ../lib/GUI/TCONFIG.pm:1235
+msgid ""
+"These Settings are passed to OpenSSL for creating Certificate Revocation "
+"Lists"
+msgstr ""
+"Ces options sont passées à OpenSSL pour la création des Listes de Révocation "
+
+#: ../lib/GUI/TCONFIG.pm:1261
+msgid "Revocation List Settings"
+msgstr "Paramètres des Listes de Révocation"
+
+#: ../lib/GUI/TCONFIG.pm:1323
+msgid "CA Configuration"
+msgstr "Configuration de la CA"
+
+#: ../lib/GUI/TCONFIG.pm:1331
+msgid "These Settings are passed to OpenSSL for creating this CA Certificate"
+msgstr ""
+"Ces options sont passées à OpenSSL pour la création du Certificat de cette CA"
+
+#: ../lib/GUI/TCONFIG.pm:1336
+msgid "and the CA Certificates of every SubCA, created with this CA."
+msgstr "et les Certificats de toute CA fille créés avec cette CA."
+
+#: ../lib/GUI/WORDS.pm:28 ../lib/GUI/WORDS.pm:75
+msgid "Not set"
+msgstr "Non Défini"
+
+#: ../lib/GUI/WORDS.pm:29 ../lib/GUI/WORDS.pm:76
+msgid "Ask User"
+msgstr "Demander à l'utilisateur"
+
+#: ../lib/GUI/WORDS.pm:30 ../lib/GUI/WORDS.pm:77
+msgid "critical"
+msgstr "critique"
+
+#: ../lib/GUI/WORDS.pm:31 ../lib/GUI/WORDS.pm:78
+msgid "not critical"
+msgstr "non critique"
+
+#: ../lib/GUI/WORDS.pm:32 ../lib/GUI/WORDS.pm:79
+msgid "Copy Email"
+msgstr "Copier l'Email"
+
+#: ../lib/GUI/WORDS.pm:33 ../lib/GUI/WORDS.pm:80
+msgid "raw"
+msgstr "données brutes (raw)"
+
+#: ../lib/GUI/WORDS.pm:34 ../lib/GUI/WORDS.pm:81
+msgid "DNS Name"
+msgstr "Nom DNS"
+
+#: ../lib/GUI/WORDS.pm:35 ../lib/GUI/WORDS.pm:83
+msgid "IP Address"
+msgstr "Adresse IP"
+
+#: ../lib/GUI/WORDS.pm:36 ../lib/GUI/WORDS.pm:82
+msgid "Email"
+msgstr "Email"
+
+#: ../lib/GUI/WORDS.pm:37 ../lib/GUI/WORDS.pm:84
+msgid "SSL Server"
+msgstr "Serveur SSL"
+
+#: ../lib/GUI/WORDS.pm:38 ../lib/GUI/WORDS.pm:85
+msgid "SSL Server, SSL Client"
+msgstr "Serveur SSL, Client SSL"
+
+#: ../lib/GUI/WORDS.pm:39 ../lib/GUI/WORDS.pm:86
+msgid "Key Encipherment"
+msgstr "Chiffrement de Clé"
+
+#: ../lib/GUI/WORDS.pm:40 ../lib/GUI/WORDS.pm:87
+msgid "Digital Signature"
+msgstr "Signature Numérique"
+
+#: ../lib/GUI/WORDS.pm:41 ../lib/GUI/WORDS.pm:88
+msgid "Key Encipherment, Digital Signature"
+msgstr "Chiffrement de Clé, Signature Numérique"
+
+#: ../lib/GUI/WORDS.pm:42 ../lib/GUI/WORDS.pm:89
+msgid "Object Signing"
+msgstr "Signature d'Objet"
+
+#: ../lib/GUI/WORDS.pm:43 ../lib/GUI/WORDS.pm:93
+msgid "SSL Client, Object Signing"
+msgstr "Client SSL, Signature d'Objet"
+
+#: ../lib/GUI/WORDS.pm:44 ../lib/GUI/WORDS.pm:91
+msgid "SSL Client, Email(S/MIME)"
+msgstr "Client SSL, Email(S/MIME)"
+
+#: ../lib/GUI/WORDS.pm:45 ../lib/GUI/WORDS.pm:92
+msgid "SSL Client"
+msgstr "Client SSL"
+
+#: ../lib/GUI/WORDS.pm:46 ../lib/GUI/WORDS.pm:90
+msgid "Email(S/MIME)"
+msgstr "Email(S/MIME)"
+
+#: ../lib/GUI/WORDS.pm:47 ../lib/GUI/WORDS.pm:94
+msgid "SSL Client, Email, Object Signing"
+msgstr "Client SSL, Email, Signature d'Objet"
+
+#: ../lib/GUI/WORDS.pm:48 ../lib/GUI/WORDS.pm:95
+msgid "Object Signing CA"
+msgstr "Signature d'Objet CA"
+
+#: ../lib/GUI/WORDS.pm:49 ../lib/GUI/WORDS.pm:96
+msgid "S/MIME CA"
+msgstr "S/MIME CA"
+
+#: ../lib/GUI/WORDS.pm:50 ../lib/GUI/WORDS.pm:97
+msgid "SSL CA"
+msgstr "SSL CA"
+
+#: ../lib/GUI/WORDS.pm:51 ../lib/GUI/WORDS.pm:98
+msgid "SSL CA, S/MIME CA"
+msgstr "SSL CA, S/MIME CA"
+
+#: ../lib/GUI/WORDS.pm:52 ../lib/GUI/WORDS.pm:99
+msgid "SSL CA, Object Signing CA"
+msgstr "SSL CA, Signature d'Objet CA"
+
+#: ../lib/GUI/WORDS.pm:53 ../lib/GUI/WORDS.pm:100
+msgid "S/MIME CA, Object Signing CA"
+msgstr "S/MIME CA, Signature d'Objet CA"
+
+#: ../lib/GUI/WORDS.pm:54 ../lib/GUI/WORDS.pm:101
+msgid "SSL CA, S/MIME CA, Object Signing CA"
+msgstr "SSL CA, S/MIME CA, Signature d'Objet CA"
+
+#: ../lib/GUI/WORDS.pm:55 ../lib/GUI/WORDS.pm:102
+msgid "Certificate Signing"
+msgstr "Signature de Certificat"
+
+#: ../lib/GUI/WORDS.pm:56 ../lib/GUI/WORDS.pm:103
+msgid "CRL Signing"
+msgstr "Signature de CRL"
+
+#: ../lib/GUI/WORDS.pm:57 ../lib/GUI/WORDS.pm:104
+msgid "Certificate Signing, CRL Signing"
+msgstr "Signature de Certificat, Signature de CRL"
+
+#: ../lib/GUI/WORDS.pm:65
+msgid "Creation Date"
+msgstr "Date de Création"
+
+#: ../lib/GUI/WORDS.pm:68
+msgid "Public Key Algorithm"
+msgstr "Algorithme de Clé Publique"
+
+#: ../lib/GUI/WORDS.pm:69
+msgid "Signature Algorithm"
+msgstr "Algorithme de Signature"
+
+#: ../lib/GUI/WORDS.pm:73 ../lib/GUI/X509_infobox.pm:81
+msgid "Fingerprint (MD5)"
+msgstr "Empreinte Numérique (MD5)"
+
+#: ../lib/GUI/WORDS.pm:74 ../lib/GUI/X509_infobox.pm:90
+msgid "Fingerprint (SHA1)"
+msgstr "Empreinte Numérique (SHA1)"
+
+#: ../lib/GUI/X509_browser.pm:449
+msgid "Certificate Information"
+msgstr "Information du Certificat"
+
+#: ../lib/GUI/X509_browser.pm:453
+msgid "Request Information"
+msgstr "Information de la Requête"
+
+#: ../lib/GUI/X509_browser.pm:572
+msgid "Invalid browser mode for selection_fname():"
+msgstr "Mode de navigation erroné pour la fonction selection_fname()"
+
+#: ../lib/GUI/X509_browser.pm:572 ../lib/GUI/X509_browser.pm:608
+#: ../lib/GUI/X509_browser.pm:657 ../lib/GUI/X509_browser.pm:678
+#: ../lib/GUI/X509_browser.pm:699 ../lib/GUI/X509_browser.pm:726
+msgid " "
+msgstr " "
+
+#: ../lib/GUI/X509_browser.pm:608
+msgid "Invalid browser mode for selection_dn():"
+msgstr "Mode de navigation erroné pour la fonction selection_dn()"
+
+#: ../lib/GUI/X509_browser.pm:657 ../lib/GUI/X509_browser.pm:678
+msgid "Invalid browser mode for selection_cn():"
+msgstr "Mode de navigation erroné pour la fonction selection_cn()"
+
+#: ../lib/GUI/X509_browser.pm:699
+msgid "Invalid browser mode for selection_status():"
+msgstr "Mode de navigation erroné pour la fonction selection_status():"
+
+#: ../lib/GUI/X509_browser.pm:726
+msgid "Invalid browser mode for selection_type():"
+msgstr "Mode de navigation erroné pour la fonction selection_type()"
+
+#: ../tinyca2:63
+#, c-format
+msgid "Can't execute %s.\n"
+msgstr "Impossible d'exécuter %s.\n"
+
+#: ../tinyca2:64
+msgid "Configure correct path to openssl in tinyca.\n"
+msgstr "Configurez le chemin correct de la commande openssl dans tinyca.\n"
+
+#: ../tinyca2:69
+msgid "zip command not found, support disabled.\n"
+msgstr "comande zip introuvable, support désactivé.\n"
+
+#: ../tinyca2:70
+msgid "Configure correct path to zip in tinyca.\n"
+msgstr "Configurez le chemin correct de la commande zip dans tinyca.\n"
+
+#: ../tinyca2:74
+msgid "tar command not found, support disabled.\n"
+msgstr "comande tar introuvable, support désactivé.\n"
+
+#: ../tinyca2:75
+msgid "Configure correct path to tar in tinyca.\n"
+msgstr "Configurez le chemin correct de la commande tar dans tinyca.\n"
+
+#: ../tinyca2:82
+msgid "Can't find templatedir.\n"
+msgstr "Impossible de trouver le répertoire de modèles.\n"
+
+#: ../tinyca2:83
+msgid "Please configure correct path with templates in tinyca.\n"
+msgstr ""
+"Configurez le chemin correct d'accès aux modèles (templates) dans tinyca.\n"
